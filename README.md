@@ -1,7 +1,7 @@
 <div align="center">
   <br />
-  <img src="https://ui-avatars.com/api/?name=SC&background=0284c7&color=fff&rounded=true&size=80" alt="SmartCommute Logo" />
-  <h1>🚦 SmartCommute <strong>SOC</strong></h1>
+  <img src="https://ui-avatars.com/api/?name=SC&background=0284c7&color=fff&rounded=true&size=80" alt="Traffic Dashboard Logo" />
+  <h1>🚦 Traffic Dashboard <strong>SOC</strong></h1>
   <p><strong>Next-Generation Traffic Intelligence & Automated Enforcement System</strong></p>
 
   <p>
@@ -17,8 +17,8 @@
 > [!NOTE]
 > **Mission Statement:** To eliminate traffic fatalities and streamline urban mobility by converting blind surveillance networks into proactive, AI-driven intelligent dispatch systems.
 
-## 📡 What is SmartCommute?
-SmartCommute is a cloud-native **Security Operations Center (SOC)** Dashboard. It aggregates live RTSP/CCTV streams from geographical junctions, analyzes the frames via an independent AI microservice, and pushes real-time infractions (Speeding, Helmetless riding, Illegal lane changes) to a centralized command unit.
+## 📡 What is Traffic Dashboard?
+Traffic Dashboard is a cloud-native **Security Operations Center (SOC)** Dashboard. It aggregates live RTSP/CCTV streams from geographical junctions, analyzes the frames via an independent AI microservice, and pushes real-time infractions (Speeding, Helmetless riding, Illegal lane changes) to a centralized command unit.
 
 ---
 
@@ -35,7 +35,7 @@ SmartCommute is a cloud-native **Security Operations Center (SOC)** Dashboard. I
 
 ## 🏗️ High-Availability System Architecture
 
-SmartCommute is designed to effortlessly scale across municipal boundaries. Video processing is heavily decoupled from the web application.
+Traffic Dashboard is designed to effortlessly scale across municipal boundaries. Video processing is heavily decoupled from the web application.
 
 ```mermaid
 graph TD;
@@ -53,7 +53,7 @@ graph TD;
     L -->|Cache/PubSub| R[(Redis Instance)]
 
     %% Frontend
-    DB --> W[SmartCommute Dashboard / UI]
+    DB --> W[Traffic Dashboard Dashboard / UI]
     R -->|Laravel Echo WebSocket| W
     W -->|Fleet API Update| Mobile[Police Fleet Mobile App]
 
@@ -82,8 +82,8 @@ graph TD;
 
 ```bash
 # Clone Repository
-git clone https://github.com/yourusername/smartcommute.git
-cd smartcommute
+git clone https://github.com/yourusername/traffic-dashboard.git
+cd traffic-dashboard
 
 # Package Installation
 composer install --optimize-autoloader
